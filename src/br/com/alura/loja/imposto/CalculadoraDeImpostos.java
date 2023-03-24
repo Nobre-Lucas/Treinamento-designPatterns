@@ -6,9 +6,9 @@ import br.com.alura.loja.orcamento.Orcamento;
 
 public class CalculadoraDeImpostos {
 
-	// Implements the Strategy Pattern
-	public BigDecimal calcular(Orcamento orcamento, Imposto imposto) {
-		return imposto.calcular(orcamento);
+	// Implements the Decorator Pattern
+	public BigDecimal calculaTotalDeImpostos(Orcamento orcamento, Imposto imposto) {
+		return imposto.calcula(orcamento);
 	}
 
 }
